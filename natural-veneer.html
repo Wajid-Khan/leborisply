@@ -1,13 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leboris - Contact</title>
-
-    <!--Essential css files-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/all.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/slick.css">
@@ -21,12 +16,207 @@
 
     <!--favicon-->
     <link rel="icon" href="assets/images/favicon.png">
+<title>Leboris Ply</title>
 
+<style>
+   
+
+ 
+
+ 
+
+    img.section-img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: #fafafa;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .product {
+        border-left: 5px solid #003366;
+        padding-left: 15px;
+        margin-bottom: 30px;
+    }
+
+   
+
+/**/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px;
+    padding: 10px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #003366;
+    margin: 10px 0 0px 0;
+}
+
+/* ✅ Tablet - 2 cards per row */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ✅ Mobile - 1 card per row */
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.guidelines-section {
+    padding: 40px 20px;
+    background: #fff;
+}
+
+.guidelines-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Image */
+.guidelines-image {
+    flex: 1;
+}
+
+.guidelines-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Content */
+.guidelines-content {
+    flex: 1;
+}
+
+.guidelines-content ul {
+    padding-left: 20px;
+}
+
+.guidelines-content li {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+/* ✅ Tablet & Mobile Responsive */
+@media (max-width: 768px) {
+
+    .guidelines-container {
+        flex-direction: column;
+    }
+
+    .guidelines-image img {
+        height: 250px;
+    }
+}
+
+
+
+
+.product-section {
+    padding: 40px 20px;
+}
+
+.product-row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/* Reverse Layout */
+.product-row.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Image */
+.product-image {
+    flex: 1;
+}
+
+.product-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Content */
+.product-content {
+    flex: 1;
+}
+
+.product-content h3 {
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.product-content li {
+    margin-bottom: 10px;
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 768px) {
+
+    .product-row,
+    .product-row.reverse {
+        flex-direction: column;
+    }
+
+    .product-image img {
+        height: 240px;
+    }
+}
+
+</style>
 </head>
-<body>
 
-    <!--preloader start-->
-   <div class="preloader">
+<body>
+   <!--preloader start-->
+    <div class="preloader">
         <h1 class="display-1">Leboris</h1>
         <div class="preload-progress">
             <span></span>
@@ -35,20 +225,21 @@
     <!--preloader end-->
 
      <!--header section start-->
-    <header class="header-section  sticky-header">
-
+   <header class="header-section  sticky-header">
+        
         <div class="header-navbar">
             <div class="container-1700 position-relative">
                 <div class="row align-items-center">
                     <div class="col-xl-3 col-5">
                         <div class="logo-wrapper">
                             <a href="index.html">
-                                <img src="assets/images/logo-white.png" class="img-fluid" alt="logo" style=" width: 60%;" />
+                            <img src="assets/images/logo-white.png" class="img-fluid" alt="logo" 
+                            style=" width: 60%;"/>
                             </a>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-7 d-none d-xl-block">
-                          <nav class="header-navigation text-center text-xl-start">
+                       <nav class="header-navigation text-center text-xl-start">
                             <ul>
                                 <li>
                                     <a href="javascript:void(0)">Home</a>
@@ -120,20 +311,20 @@
                     <div class="col-xl-3 col-7">
                         <div class="header-right d-flex align-items-center justify-content-end justify-content-xl-between gap-3 gap-sm-4 gap-lg-3">
                             <div class="header-icons d-inline-flex align-items-center gap-prt-16 gap-32">
+                                
+    <!-- WhatsApp -->
+    <a href="https://wa.me/919876543210" target="_blank" class="contact-item">
+        <i class="fab fa-whatsapp"  style="color: #000"></i>
+        <span style="color: #000">+91 98765 43210</span>
+    </a>
 
-                                <!-- WhatsApp -->
-                                <a href="https://wa.me/919876543210" target="_blank" class="contact-item">
-                                    <i class="fab fa-whatsapp" style="color: #000"></i>
-                                    <span style="color: #000">+91 98765 43210</span>
-                                </a>
-
-                                <!-- Email -->
-                                <a href="mailto:info@leborisply.com" class="contact-item">
-                                    <i class="fas fa-envelope" style="color: #000"></i>
-                                    <span style="color: #000">info@leborisply.com</span>
-                                </a>
+    <!-- Email -->
+    <a href="mailto:info@leborisply.com" class="contact-item">
+        <i class="fas fa-envelope"  style="color: #000"></i>
+        <span style="color: #000">info@leborisply.com</span>
+    </a>                               
                             </div>
-
+                           
                         </div>
                     </div>
                 </div>
@@ -143,15 +334,12 @@
     <!--header section end-->
 
     <!--header serch box start-->
-   
-
-    <!--header serch box start-->
     <div class="header-search-box">
         <form action="#">
             <label class="position-relative">
                 <i class="fas fa-magnifying-glass"></i>
                 <input type="text" placeholder="Search here....">
-            </label>
+            </label>            
         </form>
         <a href="javascript:void(0)" class="search-close"><i class="fa-solid fa-xmark"></i></a>
     </div>
@@ -185,7 +373,7 @@
                     <li><a href="wishlist.html">Wishlist</a></li>
                     <li><a href="order-tracking.html">Order Tracking</a></li>
                 </ul>
-
+                
             </li>
             <li class="has-submenu"><a href="javascript:void(0)">Blog</a>
                 <i class="fas fa-angle-down"></i>
@@ -207,166 +395,151 @@
         </ul>
     </div>
     <!--mobile menu end-->
-    <!--mobile menu end-->
-    
-    
-    <!--breadcrumb section start-->
-    <div class="breadcrumb-section pt-40 pb-40">
-        <div class="container-1700">
-            <p class="breadcrumb-text mb-0"><a href="index.html">Home</a> / <span class="text-main-color">Contact</span></p>
-        </div>
-    </div>
-    <!--breadcrumb section end-->
-
-    <!--address section start-->
-    <section class="address-section pt-140 overflow-hidden">
+<!--breadcrumb-->
+<div class="breadcrumb-section pt-40 pb-40">
     <div class="container-1700">
-        <div class="row g-5">
+        <p class="breadcrumb-text mb-0">
+            <a href="index.html">Home</a> /
+            <span class="text-main-color">Leboris Natural Veneers</span>
+        </p>
+    </div>
+</div>
 
-            <!-- Head Office -->
-            <div class="col-xl-3 col-lg-4 col-sm-6">
-                <div class="address-single">
-                    <h5 class="mb-50 fw-normal hm2-font-family">Head Office</h5>
-                    <div class="footer-address">
-                        <a href="tel:+919876543210">+91 98765 43210</a><br>
-                        <a href="mailto:info@leborisply.com" class="mail">info@leborisply.com</a>
-                        <p class="mt-32">
-                            Srinagar Colony Main Road,<br>
-                            Hyderabad, Telangana, India
-                        </p>
-                    </div>
-                </div>
-            </div>
+<!-- ABOUT NATURAL VENEER -->
+<section class="vr-about-comapny pt-140 pb-120 overflow-hidden">
+    <div class="container">
+        <h2>Leboris Natural Veneers</h2>
 
-            <!-- Mumbai Branch -->
-            <div class="col-xl-3 col-lg-4 col-sm-6">
-                <div class="address-single">
-                    <h5 class="mb-50 fw-normal hm2-font-family">Mumbai Branch</h5>
-                    <div class="footer-address">
-                        <a href="tel:+912234567890">+91 22 3456 7890</a><br>
-                        <a href="mailto:mumbai@leborisply.com" class="mail">mumbai@leborisply.com</a>
-                        <p class="mt-32">
-                            Andheri East, MIDC Area,<br>
-                            Mumbai, Maharashtra
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <img class="section-img"
+             src="assets/images/Categories/Natural-Veneer.jpg"
+             alt="Leboris Natural Veneer">
 
-            <!-- Delhi Branch -->
-            <div class="col-xl-3 col-lg-4 col-sm-6">
-                <div class="address-single">
-                    <h5 class="mb-50 fw-normal hm2-font-family">Delhi Branch</h5>
-                    <div class="footer-address">
-                        <a href="tel:+911123456789">+91 11 2345 6789</a><br>
-                        <a href="mailto:delhi@leborisply.com" class="mail">delhi@leborisply.com</a>
-                        <p class="mt-32">
-                            Okhla Industrial Area,<br>
-                            New Delhi, India
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <p>
+            Explore the timeless and raw beauty of nature with Leboris Natural Veneers.
+            Made from the finest timbers sourced from around the world, Leboris Veneers
+            offer customers a premium range of natural textures and finishes.
+        </p>
 
-            <!-- Bengaluru Branch -->
-            <div class="col-xl-3 col-lg-4 col-sm-6">
-                <div class="address-single">
-                    <h5 class="mb-50 fw-normal hm2-font-family">Bengaluru Branch</h5>
-                    <div class="footer-address">
-                        <a href="tel:+918045678901">+91 80 4567 8901</a><br>
-                        <a href="mailto:bangalore@leborisply.com" class="mail">bangalore@leborisply.com</a>
-                        <p class="mt-32">
-                            Peenya Industrial Area,<br>
-                            Bengaluru, Karnataka
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <p>
+            Veneer fleece of Leboris are handpicked across Europe, South America,
+            Africa and Russia, ensuring global quality standards and unmatched elegance.
+        </p>
+
+        <p>
+            Combining nature without losing its essence with continuous innovation
+            has always been at the core of Leboris.
+        </p>
+    </div>
+</section>
+
+<!-- VENEER SERIES -->
+<section class="product-section">
+    <div class="container">
+        <h2>Veneer Series</h2>
+
+        <div class="grid">
+
+            <div class="card"><h3>Tanned Series</h3></div>
+            <div class="card"><h3>Aspen Range</h3></div>
+            <div class="card"><h3>Fishbone Range</h3></div>
+            <div class="card"><h3>Riverbed Series</h3></div>
+            <div class="card"><h3>Palle’ Series</h3></div>
+            <div class="card"><h3>Synchronised</h3></div>
+            <div class="card"><h3>Live Tree Concepts</h3></div>
+            <div class="card"><h3>Metallino</h3></div>
 
         </div>
     </div>
 </section>
 
-    <!--address section end-->
+<!-- VENEER SPECIES LIST -->
+<section class="guidelines-section">
+    <div class="container">
+        <h2>Veneer Range</h2>
 
-    <!--contact form section start-->
-    <section class="contact-form-section pt-120 pb-140 overflow-hidden">
-        <div class="container-1700">
-            <div class="row align-items-center g-5">
-                <div class="col-xl-7 col-md-6">
-                    <div class="google-map-wrapper">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d155421.70603781365!2d13.259927382506678!3d52.506938616189004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!5e0!3m2!1sen!2sbd!4v1689504587526!5m2!1sen!2sbd" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-                <div class="col-xl-5 col-md-6">
-                    <div class="ct-form--wrapper">
-                        <h2 class="fs-40 fw-regular hm2-font-family mb-30">Get a Connect</h2>
-                        <p class="mb-50">Don't worry, we don't spam your email</p>
-                        <form class="ct-contact-form" action="#">
-                            <input type="text" class="theme-input" placeholder="Your Name*">
-                            <input type="email" class="theme-input" placeholder="Your Email*">
-                            <textarea class="theme-input" placeholder="Your Message Here*" rows="6"></textarea>
-                            <button type="submit" class="template-btn primary-btn">Submit</button>
-                        </form>
-                    </div>
-                </div>
+        <div class="row">
+            <div class="col-md-4">
+                <ul>
+                    <li>Anigre</li>
+                    <li>Cherry</li>
+                    <li>Aromatic Cedar</li>
+                    <li>Jakote</li>
+                    <li>Pommeli</li>
+                    <li>Chestnut</li>
+                    <li>Crown Maple</li>
+                    <li>Ebony</li>
+                    <li>Macassar Ebony</li>
+                    <li>European Walnut</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <ul>
+                    <li>Figured Ash</li>
+                    <li>Figured Eucalyptus</li>
+                    <li>Sycamore</li>
+                    <li>Golden Cedar</li>
+                    <li>Oak Burl</li>
+                    <li>Olive Ash</li>
+                    <li>Red Oak</li>
+                    <li>Sapeli</li>
+                    <li>Vintage Teak</li>
+                    <li>Wenge</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <ul>
+                    <li>White Ash</li>
+                    <li>White Oak Roughcut</li>
+                    <li>Zericote</li>
+                    <li>American Walnut</li>
+                    <li>Eucalyptus</li>
+                    <li>Brazilian Cherry</li>
+                    <li>Knotty Larch</li>
+                    <li>Tanned Cocobolo</li>
+                </ul>
             </div>
         </div>
-    </section>
-    <!--contact form section end-->
+    </div>
+</section>
+<section class="pt-120 pb-120">
+    <div class="container">
 
+        <div class="pricing-box">
+            <h3 class="pricing-title text-center">Leboris Natural Veneers</h3>
 
+            <table class="table pricing-table text-center">
+                <thead>
+                    <tr>
+                        <th>SIZE</th>
+                        <th>19mm</th>
+                        <th>16mm</th>
+                        <th>12mm</th>
+                        <th>9mm</th>
+                        <th>6mm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>PRICE (PER SQFT)</th>
+                        <td>185.99</td>
+                        <td>167.76</td>
+                        <td>144.10</td>
+                        <td>113.05</td>
+                        <td>95.61</td>
+                    </tr>
+                </tbody>
+            </table>
 
-    <!--hm2 feature section start-->
-    <section class="hm2-feature-section overflow-hidden light-bg-2 border-0">
-        <div class="container-1400">
-            <div class="row align-items-center g-5">
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="hm2-feature-box">
-                        <span class="icon-wrapper d-inline-flex align-items-center justify-content-center rounded-circle">
-                            <img src="assets/images/icons/1.svg" alt="not found" class="img-fluid">
-                        </span>
-                        <h6 class="fw-normal hm2-font-family mt-40 mb-4">Free Delivery</h6>
-                        <p class="mb-0">Orci lectus per torquent netusque habitasse mauris inceptos.</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="hm2-feature-box">
-                        <span class="icon-wrapper d-inline-flex align-items-center justify-content-center rounded-circle">
-                            <img src="assets/images/icons/2.svg" alt="not found" class="img-fluid">
-                        </span>
-                        <h6 class="fw-normal hm2-font-family mt-40 mb-4">90 Days Returns</h6>
-                        <p class="mb-0">Orci lectus per torquent netusque habitasse mauris inceptos.</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="hm2-feature-box">
-                        <span class="icon-wrapper d-inline-flex align-items-center justify-content-center rounded-circle">
-                            <img src="assets/images/icons/3.svg" alt="not found" class="img-fluid">
-                        </span>
-                        <h6 class="fw-normal hm2-font-family mt-40 mb-4">Secure Payment</h6>
-                        <p class="mb-0">Orci lectus per torquent netusque habitasse mauris inceptos.</p>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-4 col-sm-6">
-                    <div class="hm2-feature-box">
-                        <span class="icon-wrapper d-inline-flex align-items-center justify-content-center rounded-circle">
-                            <img src="assets/images/icons/4.svg" alt="not found" class="img-fluid">
-                        </span>
-                        <h6 class="fw-normal hm2-font-family mt-40 mb-4">100% Free Warranty</h6>
-                        <p class="mb-0">Orci lectus per torquent netusque habitasse mauris inceptos.</p>
-                    </div>
-                </div>
-            </div>
         </div>
-    </section>
-    <!--hm2 feature section end-->
 
+    </div>
+</section>
 
-    <!--footer section start-->
-  <footer class="footer-style-2 pt-140 overflow-hidden position-relative footer-mobile-accordion">
+ <footer class="footer-style-2 pt-140 overflow-hidden position-relative footer-mobile-accordion">
         <div class="container-1240">
-           
+
             <div class="row">
                 <div class="col-xl-3 col-sm-6">
                     <div class="hm2-footer-widget">
@@ -403,7 +576,7 @@
                 <div class="col-xl-2 offset-xl-1 col-sm-6">
                     <div class="footer-widget footer-nav-widget">
                         <h5 class="widget-title mb-40 fw-medium text-capitalize">Customer</h5>
-                          <ul class="footer-links">
+                        <ul class="footer-links">
                             <li><a href="#">Help & Contact Us</a></li>
 
                             <li><a href="#">Delivery Information</a></li>
@@ -414,22 +587,20 @@
                         </ul>
                     </div>
                 </div>
-               
+
             </div>
             <div class="hm2-footer-copyright">
                 <div class="row align-items-center g-3">
                     <div class="col-lg-12">
                         <p class="mb-0 fs-sm">&copy; <a href="index.html">2026 Leborisply</a>. All Rights Reserved</p>
                     </div>
-                   
+
                 </div>
             </div>
         </div>
         <a href="#" class="hm2-scrolltop">Back To Top<span class="ms-2"><i class="fas fa-arrow-right"></i></span></a>
     </footer>
-    <!--footer section end-->
-
-
+    
 
     <!--Esential Js Files-->
     <script src="assets/js/jquery.min.js"></script>
@@ -440,7 +611,7 @@
     <script src="assets/js/nice-select.js"></script>
     <script src="assets/js/fancybox.js"></script>
     <script src="assets/js/countdown.min.js"></script>
-    <script src="assets/js/wow.html"></script>
+    <script src="assets/js/wow.js"></script>
     <script src="assets/js/progress-bar.js"></script>
     <script src="assets/js/parallax.js"></script>
     <script src="assets/js/tilt-js.js"></script>
@@ -453,3 +624,4 @@
     <script src="assets/js/script.js"></script>
 
 </body>
+</html>

@@ -4054,7 +4054,7 @@ hr {
 }
 
 .vr5-product-card .feature-image {
-  height: 375px;
+  height: 205px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4064,7 +4064,7 @@ hr {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 15px;
+  padding: 10px;
   border-bottom: 1px solid #E7E7E7;
   background-color: #F8F8F8;
   -webkit-transition: var(--transition-base);
@@ -9507,4 +9507,63 @@ hr {
 /* On sticky header (dark background) */
 .sticky-on .header-contact .contact-item {
     color: #ffffff;
+}
+.counter-box h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+.counter-box p {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.warranty-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.warranty-card:hover {
+    transform: translateY(-8px);
+}
+
+.warranty-card h5 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.warranty-card p {
+    color: #777;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.pricing-box{
+    border:1px solid #e5e5e5;
+    border-radius:8px;
+    overflow:hidden;
+}
+
+.pricing-title{
+    background:#2f4c7c;
+    color:#fff;
+    padding:18px;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.pricing-table{
+    margin:0;
+}
+
+.pricing-table th{
+    background:#f7f7f7;
+    font-weight:600;
+}
+
+.pricing-table td,
+.pricing-table th{
+    padding:16px;
+    border:1px solid #e5e5e5;
 }
